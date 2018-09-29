@@ -4,12 +4,13 @@
     background: #4b73b5;
 }
 
+div {
+    border: 1px solid grey;
+}
+
 .lodo__header {
     margin-bottom: 20px;
     margin-left: 21px;
 
     
-}
-h1 {
-    color: #4b73b5
 }
