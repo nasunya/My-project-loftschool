@@ -1,20 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 1063px;
+    margin: 0 auto;
+}
+
 .header {
-    width: 100%;
-    height: 77px;
     background: #4b73b5;
+    margin-bottom: 46px;
 }
 
-div {
-    border: 1px solid grey;
+.header .container {
+    position: relative;
+    height: 77px;
 }
 
-.lodo__header {
-    margin-bottom: 20px;
-    margin-left: 21px;
-
-    
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 9px;
 }
 
-a {
-    color: red;
+.contacts {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: right;
 }
+
+.contacts__phone {
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contacts__desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.mainconten__container {
+    display: inline-block;
+    vertical-align: top;
+    width: 903px;
+}
+
+.airplanet__home{
+    display: inline;
+    margin-bottom: 67px;
+}                           
+
+.title__rates {
+    font-size: 36px;
+    margin-bottom: 38px;
+}
+
+.rates__desc {
+     padding: 39px 35px 49px 35px;
+    float: left;
+}
+
+.rates__name {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.rates__desc {
+    text-align: center;
+}
+
+
+
+
+
+
+/* Меню потом исправить*/
+
+.maincontent__sidebar {
+    width: 125px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu__link {
+    color: #b24930;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.menu__link:before {
+    content: "";
+    width: 24px;
+    height: 18px;
+    background: url() center center no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu__link:hover {
+    color: #000;
+}
+
+.menu__link:hover:before {
+    background-image: url('./img/icons/menu/direction-hover.png');
+}
+
+.menu__link--route:before {
+    background-image: url('./img/icons/menu/feed.png');
+}
+
+.menu__link--route:hover:before {
+    background-image: url('./img/icons/menu/feed-hover.png');
+}
+
+.menu___text {
+    max-width: 100px;
+    display: inline-block;
+}
+
+/* Меню потом исправить*/
