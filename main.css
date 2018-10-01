@@ -1,119 +1,140 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
+    font-family            : 'Roboto', sans-serif;
+    margin                 : 0;
+    -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-    width: 1063px;
+    width : 1063px;
     margin: 0 auto;
 }
 
 .header {
     background: #4b73b5;
-    margin-bottom: 46px;
+    
 }
 
 .header .container {
     position: relative;
-    height: 77px;
+    height  : 77px;
 }
 
 .logo {
     position: absolute;
-    top: 20px;
-    left: 9px;
+    top     : 20px;
+    left    : 9px;
 }
 
 .contacts {
-    position: absolute;
-    right: 20px;
-    top: 20px;
+    position  : absolute;
+    right     : 20px;
+    top       : 20px;
     text-align: right;
 }
 
 .contacts__phone {
-    font-size: 17px;
-    color: #fff;
+    font-size      : 17px;
+    color          : #fff;
     text-decoration: none;
 }
 
 .contacts__desc {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
+    color    : rgba(255, 255, 255, 0.7);
 }
 
 .mainconten__container {
-    display: inline-block;
+    display       : inline-block;
     vertical-align: top;
-    width: 903px;
+    width         : 903px;
 }
 
 .airplanet__home{
-    display: inline;
+    display      : inline;
     margin-bottom: 67px;
 }                           
 
 .title__rates {
-    font-size: 36px;
+    font-size    : 36px;
     margin-bottom: 38px;
 }
 
 .rates__desc {
-     padding: 39px 35px 49px 35px;
-    float: left;
+    box-sizing: border-box;
+    padding   : 39px 35px 49px 35px;
+    display   : inline-block;
+    float     : left;
+    width     : 33.33%;
 }
 
 .rates__name {
-    font-size: 12px;
+    font-size  : 12px;
     font-weight: 300;
 }
 
-.rates__desc {
+.rates__name .rates_text {
     text-align: center;
+}
+.title__news-last {
+    font-size: 36px;
+    display  : inline-block;
+}
+.desc {
+    box-sizing: border-box;
+    display   : inline-block;
+   
+}
+
+.price {
+    font-size  : 53px;
+    font-weight: 400;
+    text-align : center;
 }
 
 
-
+    
+.desc {
+    float: right;
+}
 
 
 
 /* Меню потом исправить*/
 
 .maincontent__sidebar {
-    width: 125px;
-    display: inline-block;
+    width         : 125px;
+    display       : inline-block;
     vertical-align: top;
 }
 
 .menu__list {
-    margin: 0;
-    padding: 0;
+    margin    : 0;
+    padding   : 0;
     list-style: none;
 }
 
 .menu__link {
-    color: #b24930;
-    font-size: 12px;
-    text-transform: uppercase;
+    color          : #b24930;
+    font-size      : 12px;
+    text-transform : uppercase;
     text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 2px;
-    position: relative;
+    font-weight    : bold;
+    letter-spacing : 2px;
+    position       : relative;
 }
 
 .menu__link:before {
-    content: "";
-    width: 24px;
-    height: 18px;
-    background: url() center center no-repeat;
-    display: inline-block;
+    content       : "";
+    width         : 24px;
+    height        : 18px;
+    background    : url() center center no-repeat;
+    display       : inline-block;
     vertical-align: middle;
-    margin-right: 5px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-right  : 5px;
+    position      : absolute;
+    top           : 0;
+    left          : 0;
 }
 
 .menu__link:hover {
@@ -134,7 +155,7 @@ body {
 
 .menu___text {
     max-width: 100px;
-    display: inline-block;
+    display  : inline-block;
 }
 
 /* Меню потом исправить*/
