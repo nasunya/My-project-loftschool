@@ -5,14 +5,22 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
-    width : 1063px;
-    margin: 0 auto;
+    width  : 1100px;
+    margin : 0 auto;
+    padding: 0 20px;
+    
 }
 
 .header {
-    background: #4b73b5;
-    
+    background-color: #4b73b5;
+    width           : 100%;
+    margin-bottom   : 45px;
+    padding         : 18px 0;
 }
 
 .header .container {
@@ -20,23 +28,27 @@ body {
     height  : 77px;
 }
 
-.logo {
-    position: absolute;
-    top     : 20px;
-    left    : 9px;
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear  : both;
 }
 
-.contacts {
-    position  : absolute;
-    right     : 20px;
-    top       : 20px;
-    text-align: right;
+.header__contacts {
+    float    : right;
+    font-size: 20px;
 }
 
-.contacts__phone {
-    font-size      : 17px;
-    color          : #fff;
-    text-decoration: none;
+
+.header__phone {
+    display      : block;
+    margin-bottom: 10px;
+    color        : #fff;
+}
+
+.header__shedule {
+    color: #fff;
 }
 
 .contacts__desc {
@@ -44,15 +56,14 @@ body {
     color    : rgba(255, 255, 255, 0.7);
 }
 
-.mainconten__container {
+.maincontent__container {
     display       : inline-block;
     vertical-align: top;
     width         : 903px;
 }
 
-.airplanet__home{
-    display      : inline;
-    margin-bottom: 67px;
+.maincontent__img{
+  float: left;
 }                           
 
 .title__rates {
@@ -83,7 +94,6 @@ body {
 .desc {
     box-sizing: border-box;
     display   : inline-block;
-   
 }
 
 .price {
@@ -100,7 +110,50 @@ body {
 
 
 
-/* Меню потом исправить*/
+
+.news__block {
+  display      : flex;
+  border-bottom: 1px solid grey;
+  padding      : 15px 0;
+}
+
+.news__block:last-child {
+  border: none;
+}
+
+.news__image {
+  display     : flex;
+  width       : 20%;
+  margin-right: 20px;
+}
+
+.news__desc {
+  display       : flex;
+  flex-direction: column;
+  width         : 60%;
+}
+
+.news__date {
+  margin-bottom: 10px;
+}
+
+.title__news-last {
+    margin-bottom: 63px;
+}
+
+.avatar__one {
+    border-radius: 50%;
+    margin-right : 20px;
+}
+
+
+.footer {
+    background: #4b73b5;
+   
+}
+
+
+/* Меню потом исправить*
 
 .maincontent__sidebar {
     width         : 125px;
@@ -158,4 +211,42 @@ body {
     display  : inline-block;
 }
 
-/* Меню потом исправить*/
+ Меню потом исправить*/
+
+.nav__item {
+    position     : relative;
+    margin-bottom: 20px;
+}
+
+.nav__link {
+    font-size     : 19px;
+    display       : inline-block;
+    vertical-align: middle;
+}
+
+.nav__link:before {
+    content            : "";
+    display            : inline-block;
+    background-position: center center;
+    width              : 20px;
+    height             : 20px;
+    vertical-align     : middle;
+    margin-right       : 15px;
+    
+}
+
+.nav__link-main {
+    background-image : url(img/главная.png);
+    background-repeat: no-repeat;
+    
+}
+.nav__link-rv {
+    background-image : url(img/отзывы.png);
+    background-repeat: no-repeat;
+    
+}
+.nav__link-people {
+    background-image : url(img/экипаж.png);
+    background-repeat: no-repeat;
+    
+}
