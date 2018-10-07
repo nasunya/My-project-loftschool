@@ -3,15 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1100, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/addiction">
+
     <title>Document</title>
 </head>
 
 <body>
-    <div class="page">
+    <div class="wrapper">
+        <div class="wrapper__content">
         <header class="header">
             <div class="container"> 
                 <a href="index.html" class="header__logo">
@@ -30,7 +34,11 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a href="" class="nav__link nav__link-main">Главная</a>
+                                <a href="" class="nav__link nav__link-main"> 
+                                  <span class="nav__text">
+                                      Главная 
+                                    </span> 
+                                </a>
                             </li>
                             <li class="nav__item">
                                 <a href="" class="nav__link nav__link-rv">Отзывы</a>
@@ -51,11 +59,8 @@
                     <h1 class="title__rates">Тарифы</h1>
                     <ul class="rates__descrip-coll">
                         <li class="rates__desc">
-                            <div class="rates__desc__background">
-                            <div class="rates__icon-star">
-                               
-                            </div>
-                        </div>
+                           
+                            
                             <div class="rates__desc-text">
                                 <h2 class="rates__name">СТАНДАРТ</h2>
                                 <p class="rates_text">Создан для вашего <br> комфортного отдыха</p>
@@ -192,14 +197,14 @@
             </div>
             </div>
         </main>
-    
+    </div>
+
         <footer class="footer">
             <div class="container">
                 <div class="name">
-                    <p class="footer__name">Сделано с любовью и старанием <br>
-                        на курсе «HTML + CSS» в </p> 
-                        <a href="https://loftschool.com/" class="site">Loftschool</a> 
-                    <p class="footer__name-author"> Автор работы: Прохладов Вадим</p>
+                    Сделано с любовью и старанием <br> на курсе «HTML + CSS» в 
+                        <a href="https://loftschool.com/" class="site">Loftschool</a>. <br> 
+                        Автор работы: <span class="footer__name-author">  Прохладов Вадим</span>
                 </div>
                     <div class="logo__footer">
                     <img src="img/logo_header1.png" alt="" class="logo__footer-air">

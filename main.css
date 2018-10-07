@@ -3,6 +3,10 @@ body {
     margin                 : 0;
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+}
+html, body {
+    height: 100%;
 }
 
 a {
@@ -14,6 +18,17 @@ a {
     margin : 0 auto;
     display: flex;
     
+}
+.wrapper {
+    overflow      : hidden;
+    min-width     : 1100px;
+    min-height    : 100%;
+    display       : flex;
+    flex-direction: column;
+}
+
+.wrapper__content {
+    flex: 1;
 }
 
 .header
@@ -67,6 +82,11 @@ a {
 
 .nav__list{
      list-style-type: none;
+}
+.nav__text {
+    max-width     : 100%;
+    display       : inline-block;
+    vertical-align: middle;
 }
 
 .aside {
@@ -194,13 +214,20 @@ a {
     flex-direction: column;
   }
   
-.news__image-pic {
+.news__image {
     border-radius: 50%;
-    
+    height       : 163px;
+    width        : 163px;
+    overflow     : hidden;
+}
+.news__image-pic {
+    display   : block;
+    max-width : 100%;
+    max-height: 100%;
 }
 
 .news__text {
-    margin     : 0 auto;
+    margin     : 0;
     padding-top: 12px;
 }
 .footer {
@@ -325,27 +352,25 @@ a {
     align-items    : center;
 }
 .footer__name {
-    margin   : 0 auto;
+    margin   : 0;
     font-size: 15px;
 }
 .footer__name-author {
-    margin   : 0 auto;
-    font-size: 15px;
+    margin: 0;
+  
 }
-.name__social-icons {
-    margin: 0 auto;
-}
+
 .site {
     font-size: 15px;
 }
     
 .social__icon {
-display     : inline-block;
-width       : 20px;
-height      : 20px;
-margin-right: 7px;
-margin-top  : 7px;
+display: inline-block;
+width  : 20px;
+height : 20px;
+
 }
+
 
 .social__link {
 display      : inline-block;
@@ -353,6 +378,7 @@ background   : #d3def4;
 width        : 20px;
 height       : 20px;
 border-radius: 50%;
+position     : relative;
 }
 
 .social__link:before {
@@ -366,20 +392,20 @@ height   : 15px;
 }
 
 .social__link-vk:before {
-background: url(img/vk.png);
+background: url(img/vk.png) center center no-repeat;
 }
 
 .social__link-fb:before {
-    background: url(img/fb.png);
+    background: url(img/fb.png) center center no-repeat;
 }
 
 .social__link-gp:before {
-background: url(img/google.png);
+background: url(img/google.png) center center no-repeat;
 }
 
 .social__link-tw:before {
-background: url(img/twitter.png);
+background: url(img/twitter.png) center center no-repeat;
 }
 .social__link-ml:before {
-background: url(img/mail1.png);
+background: url(img/mail1.png) center center no-repeat;
 }
