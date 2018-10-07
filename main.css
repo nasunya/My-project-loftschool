@@ -203,7 +203,7 @@ a {
       
   }
   
-  ul {
+  ul  {
     padding   : 0;
     margin    : 0;
     list-style: none;
@@ -370,6 +370,43 @@ width  : 20px;
 height : 20px;
 
 }
+
+
+.rates__icons {
+display      : inline-block;
+background   : #4b73b5;
+width        : 67px;
+height       : 67px;
+border-radius: 50%;
+position     : relative;
+
+}
+.rates__icons:before {
+content  : '';
+position : absolute;
+top      : 50%;
+left     : 50%;
+transform: translate(-50%, -50%);
+width    : 30px;
+height   : 33px;
+
+}
+
+.rates__icons-one:before {
+    background: url(img/flower1.png) center center no-repeat
+}
+.rates__icons-two:before {
+    background: url(img/mark-as-favorite-star1.png) center center no-repeat
+}
+.rates__icons-three:before {
+    background: url(img/painter-palette.png) center center no-repeat
+}
+
+
+
+
+
+
 
 
 .social__link {
