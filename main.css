@@ -10,16 +10,23 @@ a {
 }
 
 .container {
-    width           : 1100px;
-    margin          : 0 auto;
-    background-color: aquamarine;
+    width  : 1100px;
+    margin : 0 auto;
+    display: flex;
     
 }
 
+.header
+.container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
 .header {
     background-color: #4b73b5;
     padding         : 18px 0;
-  
+    display         : flex;
+    
 }
 
 
@@ -53,22 +60,25 @@ a {
     color    : rgba(255, 255, 255, 0.7);
 }
 
-.maincontent__container {
-    display       : inline-block;
-    vertical-align: top;
-    width         : 100%;
+.maincontent {
+    display: inline-block;
+    width  : 83%;
 }
 
 .nav__list{
      list-style-type: none;
 }
-.maincontent__img{
-  
 
-float: left;
-}     
+.aside {
+    display    : block;
+    font-size  : 12px;
+    width      : 17%;
+    padding-top: 50px;
+}
 
-
+.maincontent__img {
+    padding-top: 24px;
+}
                    
 
 .title__rates {
@@ -76,12 +86,14 @@ float: left;
     margin-bottom: 38px;
 }
 
+.rates__descrip-coll {
+    display   : flex;
+    list-style: none;
+    
+}
 .rates__desc {
     box-sizing: border-box;
-    padding   : 39px 35px 49px 35px;
-    display   : inline-block;
-    float     : left;
-    width     : 33.33%;
+    flex-basis: 30%;
 }
 
 .rates__name {
@@ -102,23 +114,23 @@ float: left;
     border-radius: 100%;
 }
 
-.rates__icon-star {
-    display: inline-block;
-    width  : 100px;
-    
-    vertical-align: middle;
-    
+.rates__icon-star:before {
+   
 }
-.rates__desc__background:after {
-    display       : inline-block;
-    height        : 100%;
-    vertical-align: middle;
-    content       : "";
+.rates__desc__background:before {
+        content  : '';
+        position : absolute;
+        top      : 50%;
+        left     : 50%;
+        transform: translate(-50%, -50%);
+        width    : 25px;
+        height   : 25px;
  
 }
-.title__news-last {
-    font-size: 36px;
-    display  : inline-block;
+
+
+.news-last {
+    margin: 0 auto;
 }
 .desc {
     box-sizing: border-box;
@@ -131,18 +143,17 @@ float: left;
     text-align : center;
 }
 
-
-    
-.desc {
-    float: right;
+.rates {
+    margin-bottom: 60px;
 }
+    
 
 
 
 .news__block {
     display      : flex;
     border-bottom: 1px solid #f5f5f5;
-    padding      : 15px 0;
+    padding      : 60px 0;
   }
   
   .news__block:last-child {
@@ -159,28 +170,39 @@ float: left;
     display       : flex;
     flex-direction: column;
     width         : 60%;
+    overflow      : hidden;
+    padding-left  : 19px;
   }
   
   .news__date {
-    margin-bottom: 10px;
+    padding-bottom: 8px;
   }
   .news__name {
       font-weight: bold;
       font-size  : 18px;
+      
   }
   
   ul {
     padding   : 0;
     margin    : 0;
     list-style: none;
+    
+  }
+  .news__list {
+    display       : flex;
+    flex-direction: column;
   }
   
 .news__image-pic {
-    border-radius: 100%;
+    border-radius: 50%;
     
 }
 
-
+.news__text {
+    margin     : 0 auto;
+    padding-top: 12px;
+}
 .footer {
     background: #4b73b5;
    
@@ -285,6 +307,79 @@ float: left;
     
 }
 
-.footer {
-    width: 100%;
+.air__pagination {
+    display        : flex;
+    text-align     : center;
+    justify-content: center;
+    
+}
+.air__pagination-item {
+    display: inline-flex;
+    
+}
+
+.footer
+.container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+.footer__name {
+    margin   : 0 auto;
+    font-size: 15px;
+}
+.footer__name-author {
+    margin   : 0 auto;
+    font-size: 15px;
+}
+.name__social-icons {
+    margin: 0 auto;
+}
+.site {
+    font-size: 15px;
+}
+    
+.social__icon {
+display     : inline-block;
+width       : 20px;
+height      : 20px;
+margin-right: 7px;
+margin-top  : 7px;
+}
+
+.social__link {
+display      : inline-block;
+background   : #d3def4;
+width        : 20px;
+height       : 20px;
+border-radius: 50%;
+}
+
+.social__link:before {
+content  : '';
+position : absolute;
+top      : 50%;
+left     : 50%;
+transform: translate(-50%, -50%);
+width    : 15px;
+height   : 15px;
+}
+
+.social__link-vk:before {
+background: url(img/vk.png);
+}
+
+.social__link-fb:before {
+    background: url(img/fb.png);
+}
+
+.social__link-gp:before {
+background: url(img/google.png);
+}
+
+.social__link-tw:before {
+background: url(img/twitter.png);
+}
+.social__link-ml:before {
+background: url(img/mail1.png);
 }

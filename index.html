@@ -24,35 +24,36 @@
             </div>
         </header>
         
-        <div class="container"> 
-            <aside class="maincontent">
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="" class="nav__link nav__link-main">Главная</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link nav__link-rv">Отзывы</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link nav__link-people">Экипаж</a>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
+        <main class="main">
+            <div class="container"> 
+                <aside class="aside">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="" class="nav__link nav__link-main">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__link nav__link-rv">Отзывы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__link nav__link-people">Экипаж</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
 
                 
-            <div class="maincontent__container">
+            <div class="maincontent">
                 <div class="airplanet__home">
                     <img class="maincontent__img" src="img/Photo.png" alt="" class="air">
                 </div>
                 <div class="rates">
                     <h1 class="title__rates">Тарифы</h1>
-                    <div class="rates__descrip-coll">
-                        <div class="rates__desc">
+                    <ul class="rates__descrip-coll">
+                        <li class="rates__desc">
                             <div class="rates__desc__background">
                             <div class="rates__icon-star">
-                                <img src="img/flower1.png" alt="" class="rites__icon">
+                               
                             </div>
                         </div>
                             <div class="rates__desc-text">
@@ -65,9 +66,9 @@
                                 </ul>
                             </div>
                             <div class="price">$19</div>
-                        </div>
+                        </li>
 
-                        <div class="rates__desc">
+                        <li class="rates__desc">
                             <div class="rates__icon-star">
                                 <img src="img/mark-as-favorite-star1.png" alt="" class="rites__icon">
                             </div>
@@ -81,9 +82,9 @@
                                 </ul>
                             </div>
                             <div class="price">$39</div>
-                        </div>
+                        </li>
 
-                        <div class="rates__desc">
+                        <li class="rates__desc">
                             <div class="rates__icon-star">
                                 <img src="img/painter-palette.png" alt="" class="rites__icon">
                             </div>
@@ -97,13 +98,13 @@
                                 </ul>
                             </div>
                             <div class="price">$99</div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="news">
-                    <div class="title__news">
-                        <h1 class="title__news-last">Последние новости</h1>
+                    <div class="news__title">
+                        <h1 class="news__last">Последние новости</h1>
                     </div>
                     <ul class="news__list">
                         <li class="news__block">
@@ -155,13 +156,14 @@
 
                 <div class="air__pagination">
                     <span class="air__pagination-display">Маршрут 1 из 7</span>
-                        <span class="air__pagination-elem">
+                        <div class="air__pagination-elem">
                             <a href="#" class="air__pagination-prev-next">
                             </a>
                             <ul class="air__pagination-pages">
                                 <li class="air__pagination-item">
-                                    <a href="#" class="air__pagination-prev-next">
-                                        < </a> <a href="#" class="air__pagination-link">1
+                                        <a href="#" class="air__pagination-prev-next">
+                                                < </a>
+                                    <a href="#" class="air__pagination-link">1
                                     </a>
                                 </li>
                                 <li class="air__pagination-item">
@@ -184,33 +186,39 @@
                                     <a href="#" class="route__pagination-prev-next"> > </a>
                                 </li>
                             </ul>
-                        </span>
-                </div>
-                </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="name">
-                <p class="name__footer">Сделано с любовью и старанием <br>
-                    на курсе «HTML + CSS» в </p> <a href="https://loftschool.com/" class="site">Loftschool</a>
-                <p> Автор работы: Прохладов Вадим</p>
-            </div>
-                 <div class="logo__footer">
-                 <img src="img/logo_header1.png" alt="" class="logo__footer-air">
-                </div>
-                    <div class="social__footer">
-                        <p class="name__social-icons">Наши социальные сети</p>
-                        <div class="social">
-                            <a href=""><img src="img/vk.png"></a>
-                            <a href=""><img src="img/fb.png"></a>
-                            <a href=""><img src="img/google.png"></a>
-                            <a href=""><img src="img/twitter.png"></a>
-                            <a href=""><img src="img/mail1.png"></a>
                         </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="name">
+                    <p class="footer__name">Сделано с любовью и старанием <br>
+                        на курсе «HTML + CSS» в </p> 
+                        <a href="https://loftschool.com/" class="site">Loftschool</a> 
+                    <p class="footer__name-author"> Автор работы: Прохладов Вадим</p>
+                </div>
+                    <div class="logo__footer">
+                    <img src="img/logo_header1.png" alt="" class="logo__footer-air">
                     </div>
-        </div>
-    </footer>
+
+
+                        <div class="social__footer">
+                            <p class="name__social-icons">Наши социальные сети</p>
+                            <ul class="new__list">
+                               <li class="social__icon"><a href="#" class="social__link social__link-vk"></a></li> 
+                               <li class="social__icon"><a href="#" class="social__link social__link-fb"></a></li>
+                               <li class="social__icon"><a href="#" class="social__link social__link-gp"></a></li>
+                                <li class="social__icon" ><a href="#" class="social__link social__link-tw"></a></li>
+                                <li class="social__icon"><a href="#" class="social__link social__link-ml"></a></li>
+                            </ul>
+                        </div>
+            </div>
+        </footer>
+    </div>
+ 
 </body>
 </html>
