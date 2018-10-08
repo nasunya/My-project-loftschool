@@ -134,9 +134,7 @@ a {
     border-radius: 100%;
 }
 
-.rates__icon-star:before {
-   
-}
+
 .rates__desc__background:before {
         content  : '';
         position : absolute;
@@ -203,16 +201,17 @@ a {
       
   }
   
-  ul  {
+  ul {
     padding   : 0;
     margin    : 0;
     list-style: none;
-    
   }
+ 
   .news__list {
     display       : flex;
     flex-direction: column;
   }
+  
   
 .news__image {
     border-radius: 50%;
