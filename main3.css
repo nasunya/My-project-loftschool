@@ -20,9 +20,9 @@ ul {
  
 
 .container {
-    width  : 1100px;
-    margin : 0 auto;
-    display: flex;
+    width : 1100px;
+    margin: 0 auto;
+   
     
 }
 .wrapper {
@@ -299,3 +299,25 @@ background: url(img/twitter.png) center center no-repeat;
 .social__link-ml:before {
 background: url(img/mail1.png) center center no-repeat;
 }
+
+
+
+
+.main {
+    display: flex;
+    flex   : 1;
+    
+}
+
+.desc__command{
+  display       : flex;
+  flex-direction: row;
+  flex          : 1;
+  
+}
+.nav__list {
+    display       : flex;
+    flex          : 1;
+    flex-direction: column;
+}
+
