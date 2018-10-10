@@ -33,11 +33,35 @@ ul {
     min-height    : 100%;
     display       : flex;
     flex-direction: column;
+    flex          : 1;
 }
 
 .wrapper__content {
     flex: 1;
 }
+
+.main {
+    flex   : 1;
+    display: flex;
+
+}
+
+.desc {
+    flex: 1;
+}
+
+.nav {
+    order: -1;
+}
+
+
+
+.addit__icons {
+    display  : flex;
+    flex-wrap: wrap;
+    width    : 500px;
+}
+
 
 .header
 .container {
