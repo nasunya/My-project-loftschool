@@ -22,9 +22,10 @@ ul {
 .container {
     width : 1100px;
     margin: 0 auto;
-    
-   
-    
+}
+
+.contetn {
+    display: flex;
 }
 .wrapper {
     overflow      : hidden;
@@ -83,14 +84,12 @@ ul {
 }
 
 .maincontent {
-    display       : inline-block;
-    width         : 16%;
-    vertical-align: top;
+    width: 100%;
+   
 }
 
-.info__command {
-    display: inline-block;
-    width  : 70%;
+.aside {
+    width: 16%
 }
 
 .breadcrumbs__list {
@@ -131,12 +130,6 @@ ul {
 }
 
 
-.aside {
-    display    : block;
-    font-size  : 12px;
-    width      : 17%;
-    padding-top: 50px;
-}
 
 .maincontent__img {
     padding-top: 24px;
@@ -307,18 +300,19 @@ background: url(img/mail1.png) center center no-repeat;
 
 
 
-.desc__command {
+
+.addit__icons {
     display        : flex;
     flex-direction : row;
     justify-content: center;
     flex-wrap      : wrap;
+    width          : 400px;
 }
     
-.addit {
+.desc__command-air{
     display        : flex;
     flex-direction : row;
     justify-content: center;
     flex-wrap      : wrap;
-}
-    
+  
 }
