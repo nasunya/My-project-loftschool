@@ -9,10 +9,18 @@ html, body {
     height: 100%;
 }
 
-a {
-    text-decoration: none;
-}
 
+
+ul {
+    padding   : 0;
+    margin    : 0;
+    list-style: none;
+  }
+
+  p, h1 {
+    margin: 0;
+}
+  
 .container {
     width  : 1100px;
     margin : 0 auto;
@@ -53,21 +61,29 @@ a {
 }
 
 .header__contacts {
-    text-align: right;
-    font-size : 20px;
-    float     : right;
+    text-align   : right;
+    font-size    : 21px;
+    float        : right;
+    padding-right: 18px;
+    
 }
 
 
 .header__phone {
-    display   : block;
-    color     : #fff;
-    text-align: right;
+    display        : block;
+    color          : #fff;
+    text-align     : right;
+    letter-spacing : 1px;
+    text-decoration: none;
+    font-size      : 20px;
+    font-weight    : 550;
 }
  
 
 .header__shedule {
-    color: #fff;
+    color      : #d4dbea;
+    font-size  : 14px;
+    font-weight: 550;
 }
 
 .contacts__desc {
@@ -80,13 +96,25 @@ a {
     width  : 83%;
 }
 
+
+
 .nav__list{
      list-style-type: none;
+     text-transform : uppercase;
+     
+    
 }
 .nav__text {
     max-width     : 100%;
     display       : inline-block;
     vertical-align: middle;
+    letter-spacing: 2px;
+    font-size     : 12px;
+    font-weight   : 600;
+    
+}
+.nav__link {
+    text-decoration: none;
 }
 
 .aside {
@@ -97,33 +125,46 @@ a {
 }
 
 .maincontent__img {
-    padding-top: 24px;
+    padding-top: 22px;
+   
 }
                    
 
 .title__rates {
-    font-size    : 36px;
-    margin-bottom: 38px;
+    font-size    : 49px;
+    margin-top   : 1px;
+    margin-bottom: 65px;
 }
 
 .rates__descrip-coll {
     display   : flex;
     list-style: none;
+   
     
 }
 .rates__desc {
     box-sizing: border-box;
     flex-basis: 30%;
+    
 }
 
 .rates__name {
-    font-size  : 12px;
-    font-weight: 300;
-    text-align : center
+    font-size     : 12px;
+    font-weight   : 300;
+    text-align    : center;
+    padding-top   : 20px;
+    padding-bottom: 14px;
+    letter-spacing: 1px;
 }
 
- .rates_text {
-    text-align: center;
+
+.rates_text {
+    text-align    : center;
+    font-size     : 18px;
+    padding-bottom: 10px;
+    line-height   : 1.7;
+   
+    
 }
 
 .rates__desc__background {
@@ -134,9 +175,7 @@ a {
     border-radius: 100%;
 }
 
-.rates__icon-star:before {
-   
-}
+
 .rates__desc__background:before {
         content  : '';
         position : absolute;
@@ -167,13 +206,79 @@ a {
     margin-bottom: 60px;
 }
     
+.rates__list {
+    text-align     : left;
+    list-style-type: disc;
+    padding-left   : 60px;
+    line-height    : 30px;
+    margin-bottom  : 26px;
+}
+.tariffs-item__price-dollar {
+    font-size: 34.89px;
+}
+
+.tariffs-item__price-cost {
+    font-size: 53.89px;
+}
+
+.tariffs-item__price {
+    text-align   : center;
+    margin-bottom: 18px;
+}
+   
+
+.rates__name {
+    font-weight   : 600;
+    letter-spacing: 2px;
+}
+
+.rates__text {
+    line-height  : 30px;
+    margin-bottom: 5px;
+}
+
+.rates__icons {
+display      : block;
+background   : #4b73b5;
+width        : 67px;
+height       : 67px;
+border-radius: 50%;
+position     : relative;
+margin       : 0 auto;
+
+}
+.rates__icons:before {
+content  : '';
+position : absolute;
+top      : 50%;
+left     : 50%;
+transform: translate(-50%, -50%);
+width    : 30px;
+height   : 33px;
+
+}
+
+.rates__icons-one:before {
+    background: url(img/flower1.png) center center no-repeat
+}
+.rates__icons-two:before {
+    background: url(img/mark-as-favorite-star1.png) center center no-repeat
+}
+.rates__icons-three:before {
+    background: url(img/painter-palette.png) center center no-repeat
+}
 
 
+
+.news__last {
+    font-size     : 49px;
+    padding-bottom: 63px;
+}
 
 .news__block {
-    display      : flex;
-    border-bottom: 1px solid #f5f5f5;
-    padding      : 60px 0;
+    display       : flex;
+    border-bottom : 1px solid #f5f5f5;
+    padding-bottom: 30px
   }
   
   .news__block:last-child {
@@ -195,7 +300,8 @@ a {
   }
   
   .news__date {
-    padding-bottom: 8px;
+      font-size     : 14px;
+      padding-bottom: 8px;
   }
   .news__name {
       font-weight: bold;
@@ -203,16 +309,13 @@ a {
       
   }
   
-  ul  {
-    padding   : 0;
-    margin    : 0;
-    list-style: none;
-    
-  }
+
+ 
   .news__list {
     display       : flex;
     flex-direction: column;
   }
+  
   
 .news__image {
     border-radius: 50%;
@@ -228,7 +331,10 @@ a {
 
 .news__text {
     margin     : 0;
-    padding-top: 12px;
+    padding-top: 16px;
+    line-height: 26px;
+    font-size  : 18px;
+   
 }
 .footer {
     background: #4b73b5;
@@ -338,13 +444,28 @@ a {
     display        : flex;
     text-align     : center;
     justify-content: center;
+    margin-bottom  : 60px;
     
+}
+.air__pagination-prev-next {
+    text-decoration: none;
+}
+.route__pagination-link{
+text-decoration: none;
+
 }
 .air__pagination-item {
-    display: inline-flex;
-    
+    display       : inline-flex;
+    letter-spacing: 12px;
 }
 
+.air__pagination-display {
+    font-size    : 14px;
+    padding-right: 20px;
+}
+.footer {
+    min-height: 77px;
+}
 .footer
 .container {
     display        : flex;
@@ -352,8 +473,9 @@ a {
     align-items    : center;
 }
 .footer__name {
-    margin   : 0;
-    font-size: 15px;
+   padding-top: 14px;
+   font-size  : 15px;
+   color      : #fff;
 }
 .footer__name-author {
     margin: 0;
@@ -361,7 +483,9 @@ a {
 }
 
 .site {
-    font-size: 15px;
+    font-size  : 15px;
+    color      : #fff;
+    font-weight: 600;
 }
     
 .social__icon {
@@ -372,42 +496,16 @@ height : 20px;
 }
 
 
-.rates__icons {
-display      : inline-block;
-background   : #4b73b5;
-width        : 67px;
-height       : 67px;
-border-radius: 50%;
-position     : relative;
-
-}
-.rates__icons:before {
-content  : '';
-position : absolute;
-top      : 50%;
-left     : 50%;
-transform: translate(-50%, -50%);
-width    : 30px;
-height   : 33px;
-
+.logo__footer {
+    padding-top: 14px;
 }
 
-.rates__icons-one:before {
-    background: url(img/flower1.png) center center no-repeat
+.name__social-icons {
+    color         : #fff;
+    font-size     : 14px;
+    padding-top   : 14px;
+    padding-bottom: 11px;
 }
-.rates__icons-two:before {
-    background: url(img/mark-as-favorite-star1.png) center center no-repeat
-}
-.rates__icons-three:before {
-    background: url(img/painter-palette.png) center center no-repeat
-}
-
-
-
-
-
-
-
 
 .social__link {
 display      : inline-block;
@@ -445,4 +543,9 @@ background: url(img/twitter.png) center center no-repeat;
 }
 .social__link-ml:before {
 background: url(img/mail1.png) center center no-repeat;
+
 }
+.new__list {
+    letter-spacing: 7px;
+   
+} 
