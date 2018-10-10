@@ -116,7 +116,7 @@ ul {
     color    : rgba(255, 255, 255, 0.7);
 }
 
-.aside {
+.maincontent {
     display: inline-block;
     width  : 83%;
 }
@@ -142,7 +142,12 @@ ul {
     text-decoration: none;
 }
 
-
+.aside {
+    display    : block;
+    font-size  : 12px;
+    width      : 17%;
+    padding-top: 50px;
+}
 
 .maincontent__img {
     padding-top: 22px;
