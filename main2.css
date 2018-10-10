@@ -83,8 +83,9 @@ ul {
 }
 
 .maincontent {
-    display: inline-block;
-    width  : 16%;
+    display       : inline-block;
+    width         : 16%;
+    vertical-align: top;
 }
 
 .info__command {
@@ -306,10 +307,18 @@ background: url(img/mail1.png) center center no-repeat;
 
 
 
-
 .desc__command {
     display        : flex;
-    flex-direction : column;
+    flex-direction : row;
     justify-content: center;
     flex-wrap      : wrap;
+}
+    
+.addit {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    flex-wrap      : wrap;
+}
+    
 }
