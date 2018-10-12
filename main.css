@@ -117,8 +117,8 @@ ul {
 }
 
 .maincontent {
-    display: inline-block;
-    width  : 83%;
+    display   : inline-block;
+    width     : 83%;
 }
 
 
@@ -139,8 +139,18 @@ ul {
     
 }
 .nav__link {
-    text-decoration: none;
+   
+        display        : flex;
+        align-items    : center;
+        color          : #4b73b5;
+        font-size      : 12px;
+        text-transform : uppercase;
+        font-weight    : bold;
+        letter-spacing : 2px;
+        text-decoration: none;
 }
+
+
 
 .aside {
     display    : block;
@@ -197,7 +207,7 @@ ul {
     height       : 70px;
     text-align   : center;
     background   : #4b73b5;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 

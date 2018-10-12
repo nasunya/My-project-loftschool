@@ -17,6 +17,10 @@ ul {
     margin    : 0;
     list-style: none;
   }
+
+  h1, h3, h4, p {
+      margin: 0;
+  }
  
 
 .container {
@@ -123,9 +127,24 @@ ul {
     display: inline-block;
   }
   
+  
   .breadcrumbs__link {
-    display: inline-block;
-  }
+    font-weight    : 300;
+    font-style     : italic;
+    color          : #1c5bc3;
+    opacity        : 0.8;
+    text-decoration: underline;
+    line-height    : 1.286;
+}
+.breadcrumbs__link_active {
+    color          : #221f1f;
+    opacity        : 0.8;
+    text-decoration: none;
+}
+
+.aside {
+    margin: 0;
+}
  .nav__list{
      list-style-type: none;
 }
@@ -135,7 +154,9 @@ ul {
     vertical-align: middle;
 }
 
-
+.content {
+    margin-top: 45px;
+}
 
 .maincontent__img {
     padding-top: 24px;
@@ -149,10 +170,15 @@ ul {
 }
 
 .nav__link {
-    font-size     : 19px;
-    display       : inline-block;
-    vertical-align: middle;
-}
+     
+        display       : flex;
+        align-items   : center;
+        color         : #4b73b5;
+        font-size     : 12px;
+        text-transform: uppercase;
+        font-weight   : bold;
+        letter-spacing: 2px;
+    }
 
 .nav__link:before {
     content            : "";
@@ -260,10 +286,63 @@ height   : 33px;
 }
 
 
+.footer {
+    min-height: 77px;
+}
+.footer
+.container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+.footer__name {
+   padding-top: 14px;
+   font-size  : 15px;
+   color      : #fff;
+}
+.footer__name-author {
+    margin: 0;
+  
+}
+
+.site {
+    font-size  : 15px;
+    color      : #fff;
+    font-weight: 600;
+}
+    
+.social__icon {
+display: inline-block;
+width  : 20px;
+height : 20px;
+
+}
 
 
+.logo__footer {
+    padding-top: 14px;
+}
+
+.name__social-icons {
+    color         : #fff;
+    font-size     : 14px;
+    padding-top   : 14px;
+    padding-bottom: 11px;
+}
 
 
+.desc__title {
+    font-size    : 49px;
+    color        : #000;
+    font-weight  : bold;
+    margin-bottom: 17px;
+} 
+
+.breadcrumbs {
+    display      : flex;
+    font-size    : 14px;
+    margin-bottom: 20px;
+}
 
 
 .social__link {
@@ -314,6 +393,7 @@ background: url(img/mail1.png) center center no-repeat;
     align-items    : center;
     justify-content: center;
     width          : 100%;
+    margin-bottom  : 80px;
 }
 .desc__command-air{
     width         : 30%;
@@ -376,4 +456,64 @@ background: url(img/mail1.png) center center no-repeat;
     line-height: 21px;
     transition : .5s;
     text-align : center;
+}
+.addit__icons__image{
+    border-style: none;
+}
+.desc__name__people {
+    font-size    : 18px;
+    font-weight  : bold;
+    margin-bottom: 5px;
+}
+.desc__name__profession {
+    font-size    : 14px;
+    color        : #4b73b5;
+    font-weight  : 700;
+    margin-bottom: 5px;
+}
+
+.desc__text {
+    font-size  : 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.desc {
+    padding-bottom: 39px;
+    width         : 100%;
+}
+
+
+
+
+.partners__link {
+    display   : flex;
+    position  : relative;
+    transition: 0.3s;
+}
+.partners__link {
+    filter    : grayscale(100%);
+    transition: .5s;
+}
+
+
+a {
+    background-color: transparent;
+}
+
+img {
+    border-style: none;
+}
+
+
+.addit__name {
+    margin-bottom: 40px;
+}
+
+
+.addit__title {
+    font-size    : 49px;
+    color        : #000;
+    font-weight  : bold;
+    margin-bottom: 35px;
 }
