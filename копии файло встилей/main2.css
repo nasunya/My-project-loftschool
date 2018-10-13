@@ -31,6 +31,7 @@ ul {
 
 .main {
     display: flex;
+    flex   : 1;
 }
 
 .contetnt {
@@ -43,6 +44,7 @@ ul {
     min-height    : 100%;
     display       : flex;
     flex-direction: column;
+    flex          : 1;
 }
 
 .wrapper__content {
@@ -99,7 +101,12 @@ ul {
 }
 
 .aside {
-    width: 16%
+    display  : block;
+    font-size: 12px;
+    width    : 17%;
+    margin   : 0;
+}
+
 }
 
 .breadcrumbs__list {
@@ -145,8 +152,11 @@ ul {
 .aside {
     margin: 0;
 }
- .nav__list{
-     list-style-type: none;
+
+.nav__list__item {
+    display       : flex;
+    flex          : 1;
+    flex-direction: column;
 }
 .nav__text {
     max-width     : 100%;
@@ -162,6 +172,9 @@ ul {
     padding-top: 24px;
 }
                    
+.nav {
+    order: -1;
+}
 
 
 .nav__item {

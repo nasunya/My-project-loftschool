@@ -36,6 +36,8 @@ ul {
     flex          : 1;
 }
 
+
+
 .wrapper__content {
     flex: 1;
 }
@@ -106,7 +108,7 @@ ul {
  
 
 .header__shedule {
-    color      : #d4dbea;
+    color      : rgba(255, 255, 255, 0.7);
     font-size  : 14px;
     font-weight: 550;
 }
@@ -117,8 +119,8 @@ ul {
 }
 
 .maincontent {
-    display   : inline-block;
-    width     : 83%;
+    display: inline-block;
+    width  : 83%;
 }
 
 
@@ -153,12 +155,16 @@ ul {
 
 
 .aside {
-    display    : block;
-    font-size  : 12px;
-    width      : 17%;
-    padding-top: 50px;
+    display  : block;
+    font-size: 12px;
+    width    : 17%;
+    
 }
 
+
+.aside__sidebar {
+    padding-top: 50px;
+}
 .maincontent__img {
     padding-top: 22px;
    
@@ -486,10 +492,16 @@ height   : 33px;
 .air__pagination-prev-next {
     text-decoration: none;
 }
-.route__pagination-link{
+.route__pagination-link {
 text-decoration: none;
 
 }
+.pagination__link .pagination__link_next a {
+    text-decoration: none;
+}
+
+
+
 .air__pagination-item {
     display       : inline-flex;
     letter-spacing: 12px;
