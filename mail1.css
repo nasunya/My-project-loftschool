@@ -20,7 +20,10 @@ ul {
 }
 
 p,
-h1 {
+h1,
+h3,
+h4
+ {
     margin: 0;
 }
 
@@ -107,6 +110,72 @@ li {
     color      : rgba(255, 255, 255, 0.7);
     font-size  : 14px;
     font-weight: 550;
+}
+
+.dropdowm {
+    position: relative;
+}
+
+.dropdowm:hover .dropdown__menu{
+   left   : 0;
+   opacity: 1;
+}
+
+.dropdown__menu {
+    font-family: 'Roboto', sans-serif;
+    position   : absolute;
+    background : #fff;
+    width      : 170px;
+    height     : 50px;
+    top        : 100%;
+    margin-top : 19px;
+    opacity    : 0;
+    transition : opacity .4s;
+    left       : -9999px;
+    font-size  : 14px;
+  
+    
+}
+
+.dropdown__menu:before {
+    content      : "";
+    position     : absolute;
+    border-left  : 10px solid rgba(113, 101, 58, 0);
+    border-right : 10px solid rgba(113, 101, 58, 0);
+    border-bottom: 10px solid #fff;
+    right        : 0px;
+    top          : -10px;
+}
+
+.dropdown__menu:before:after {
+    content      : "";
+    position     : absolute;
+    border-left  : 10px solid rgba(255, 241, 190, 0);
+    border-right : 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    left         : 20px;
+    top          : -9px;
+}​
+.dropdown__menu:before {
+    content : "";
+    display : block;
+    height  : 30px;
+    left    : 0;
+    right   : 0;
+    top     : -29px;
+    position: absolute;
+    
+}
+ 
+.dropdown__day {
+    color      : #4b73b5;
+    font-weight: bold;
+   
+}
+
+.dropdown__time {
+    margin-top: 10px;
+   
 }
 
 .main {
@@ -626,7 +695,7 @@ li {
 }
 .partners__link {
     filter    : grayscale(100%);
-    transition: .5s;
+    transition: .4s;
 }
 
 .reviews__title {
@@ -643,7 +712,7 @@ li {
     margin-bottom: 40px;
 }
 
-.addit__icons__image:hover{
+.partners__link:hover{
     filter: grayscale(0);
     
 }
@@ -678,14 +747,14 @@ li {
     font-weight  : 300;
     font-size    : 14px;
     color        : #656464;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 }
 
 .list-view__name {
     font-weight  : bold;
     font-size    : 18px;
     color        : #221f1f;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .list-view__text {
