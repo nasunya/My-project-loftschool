@@ -1,0 +1,23 @@
+.container {
+    background     : url(img/kzhhnb6xsqi-margo-brodowicz.png) center center fixed no-repeat;
+    background-size: cover;
+    height         : 100vh;
+}
+.container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+}
+
+.pages {
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    
+   
+}

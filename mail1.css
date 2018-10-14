@@ -62,6 +62,16 @@ li {
     flex: 1;
 }
 
+.wrapper__auth {
+ position  : fixed;
+ top       : 0;
+ left      : 0;
+ right     : 0;
+ bottom    : 0;
+ background: url(img/kzhhnb6xsqi-margo-brodowicz.png) center  center / cover  no-repeat;
+}
+
+
 .header .container {
     display        : flex;
     justify-content: space-between;
@@ -73,6 +83,10 @@ li {
     padding         : 18px 0;
     display         : flex;
 
+}
+.header__col {
+   flex: 1;
+    
 }
 
 .header__shedule:hover {
@@ -86,10 +100,10 @@ li {
 }
 
 .header__contacts {
-    text-align   : right;
-    font-size    : 21px;
-    float        : right;
-    padding-right: 18px;
+    text-align: right;
+    font-size : 21px;
+    float     : right;
+  
 
 }
 
@@ -133,13 +147,22 @@ li {
     transition : opacity .4s;
     left       : -9999px;
     font-size  : 14px;
-  
-    
+   
 }
+
+.dropdown__menu:before:after {
+    content      : "";
+    position     : relative;
+    border-left  : 10px solid rgba(255, 241, 190, 0);
+    border-right : 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    left         : 20px;
+    top          : -9px;
+}​
 
 .dropdown__menu:before {
     content      : "";
-    position     : absolute;
+    position     : relative;
     border-left  : 10px solid rgba(113, 101, 58, 0);
     border-right : 10px solid rgba(113, 101, 58, 0);
     border-bottom: 10px solid #fff;
@@ -147,15 +170,7 @@ li {
     top          : -10px;
 }
 
-.dropdown__menu:before:after {
-    content      : "";
-    position     : absolute;
-    border-left  : 10px solid rgba(255, 241, 190, 0);
-    border-right : 10px solid #fff;
-    border-bottom: 10px solid #fff;
-    left         : 20px;
-    top          : -9px;
-}​
+
 .dropdown__menu:before {
     content : "";
     display : block;
@@ -178,28 +193,21 @@ li {
    
 }
 
+
+
+
 .main {
     display: flex;
     flex   : 1;
 }
 
-.content {
-    margin-top: 45px;
-}
 
-.aside {
-    display  : block;
-    font-size: 12px;
-    width    : 17%;
-    margin   : 0;
-}
 
-.aside__sidebar {
-    padding-top: 45px;
-}
+
 
 .nav {
-    order: -1;
+    order        : -1;
+    margin-bottom: 18px;
 }
 .nav__link:hover {
     color: #000;
@@ -212,9 +220,10 @@ li {
 
 
 .nav__list__item {
-    display       : flex;
-    flex          : 1;
-    flex-direction: column;
+    display: flex;
+    
+    flex-direction: row;
+
 }
 
 .nav__text {
@@ -240,7 +249,7 @@ li {
 }
 
 .nav__link-main {
-    background-image : url(img/главная.png);
+    background-image : url(img/main_icon__arrroe.png);
     background-repeat: no-repeat;
 
 }
@@ -270,6 +279,7 @@ li {
 .nav__item {
     position     : relative;
     margin-bottom: 20px;
+    padding-right: 90px;
 }
 
 .nav__link {
@@ -279,31 +289,34 @@ li {
 }
 
 .maincontent {
-    display: inline-block;
-    width  : 83%;
+    display    : inline-block;
+    width      : 83%;
+    margin-left: 30px;
 }
 
 .maincontent__main {
-    width: 83%;
+    width      : 83%;
+    margin-left: 30px;
 
 }
 
 
-.breadcrumbs {
-    display      : flex;
-    font-size    : 14px;
-    margin-bottom: 20px;
+.aside {
+    display       : flex;
+    flex-direction: row;
+    font-size     : 14px;
+    margin-top    : 30px;
 }
 
 
 
-.breadcrumbs__list {
+.nav__list__item {
     margin         : 0;
     padding        : 0;
     list-style-type: none;
 }
 
-.breadcrumbs__item {
+.nav__item {
     display       : inline-block;
     vertical-align: middle;
 }
@@ -339,15 +352,13 @@ li {
 }
 
 
-.maincontent__img {
-    padding-top: 22px;
 
-}
 
 .title__rates {
-    font-size    : 49px;
-    margin-top   : 1px;
-    margin-bottom: 65px;
+    font-size     : 18px;
+    margin-top    : 1px;
+    margin-bottom : 15px;
+    text-transform: uppercase;
 }
 
 .rates__descrip-coll {
@@ -499,7 +510,7 @@ li {
 
 .news__block {
     display       : flex;
-    border-bottom : 1px solid #f5f5f5;
+    flex-direction: column;
     padding-bottom: 30px;
     margin-bottom : 30px;
 }
@@ -509,22 +520,23 @@ li {
 }
 
 .news__image {
-    display: flex;
-    width  : 20%;
-
+   
 }
 
 .news__desc {
     display       : flex;
     flex-direction: column;
-    width         : 80%;
-    overflow      : hidden;
-    padding-left  : 19px;
+    
+    overflow    : hidden;
+    padding-left: 19px;
+    padding-top : 40px;
 }
 
 .news__date {
-    font-size     : 14px;
+    font-size     : 12px;
     padding-bottom: 8px;
+    display       : flex;
+    
 }
 
 .news__name {
@@ -537,29 +549,32 @@ li {
 
 .news__list {
     display       : flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom : 40px;
 }
 
 
 .news__image {
+    
     border-radius: 50%;
     height       : 163px;
     width        : 163px;
     overflow     : hidden;
+   
 }
 
 .news__image-pic {
     display   : block;
     max-width : 100%;
     max-height: 100%;
+    
 }
 
 .news__text {
     margin     : 0;
     padding-top: 16px;
-    line-height: 26px;
-    font-size  : 18px;
+ 
+    font-size: 14px;
 
 }
 
@@ -567,8 +582,9 @@ li {
 
 
 .desc {
-    padding-bottom: 39px;
+    padding-bottom: 79px;
     width         : 100%;
+   
 }
 
 
@@ -639,7 +655,7 @@ li {
 }
 
 .desc__text {
-    font-size  : 14px;
+    font-size  : 12px;
     font-weight: 300;
     line-height: 21px;
 }
@@ -650,39 +666,41 @@ li {
     font-weight  : bold;
     margin-bottom: 17px;
 } 
-
+ .addit {
+     display: flex;
+     order  : -1;
+ }
+.addit__name {
+    padding-bottom: 50px;
+    font-size     : 14px;
+    text-transform: uppercase;
+    
+}
 
 .addit__icons {
+    
+    display       : flex;
+    flex-direction: column;
    
-    display        : flex;
-    flex-wrap      : wrap;
-    align-items    : center;
-    justify-content: center;
-    width          : 100%;
-    margin-bottom  : 80px;
 }
 .addit__item {
-    width          : 33.3%;
-    margin-bottom  : 64px;
-    display        : flex;
-    justify-content: center;
-    align-items    : flex-start;
+  
+    display      : flex;
+    margin-bottom: 50px;
 }
 .addit__icons__image{
     border-style: none;
 }
 
 
-.addit__name {
-    margin-bottom: 40px;
-}
 
 
 .addit__title {
-    font-size    : 49px;
-    color        : #000;
-    font-weight  : bold;
-    margin-bottom: 35px;
+    font-size  : 18px;
+    color      : #000;
+    font-weight: bold;
+    text-align : center;
+    
 }
 
   /*Третья страница Отзывы*/
@@ -770,15 +788,15 @@ li {
 }
 
 .booking {
-    background     : url(img/pattern1.png) no-repeat;
-    background-size: 100%;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
+    background: url(img/pattern.png) no-repeat;
+   
+    display: flex;
+    
+    align-items: center;
 }
 
 .booking__info {
-    max-width  : 630px;
+    
     margin     : 51px 0;
     color      : #fff;
     font-size  : 18px;
@@ -844,7 +862,7 @@ li {
 }
 
 .form__textarea {
-    line-height: 1.42px;
+    line-height: 1.2px;
     padding    : 10px;
 }
 
@@ -1026,9 +1044,7 @@ button {
     cursor    : pointer;
 }
 
-.send-button_bg {
-    background-color: #4b73b5;
-}
+
 
 .send-button:after, .send-button:hover:after {
     content    : '';
@@ -1041,7 +1057,7 @@ button {
 }
 
 .send-button_arrow:after {
-    background: url(img/главная.png) no-repeat;
+    background: url(img/main_icon__arrroe.png) no-repeat;
 }
 
 
@@ -1168,7 +1184,10 @@ button {
     margin: 0;
   
 }
-
+.social__footer {
+    display       : flex;
+    flex-direction: column;
+}
 .site {
     font-size  : 15px;
     color      : #fff;
@@ -1181,22 +1200,38 @@ width  : 20px;
 height : 20px;
 
 }
-
+.vertical__booking {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 40px;
+}
+.vertical__rates {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 40px;
+}
+.vertical__addit {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 50px;
+   
+}
 
 .logo__footer {
     padding-top: 14px;
 }
 
 .name__social-icons {
-    color         : #fff;
+    color         : #000;
     font-size     : 14px;
     padding-top   : 14px;
     padding-bottom: 11px;
+
 }
 
 .social__link {
 display      : inline-block;
-background   : #d3def4;
+background   : #fff;
 width        : 20px;
 height       : 20px;
 border-radius: 50%;
@@ -1250,3 +1285,82 @@ background: url(img/mail1.png) center center no-repeat;
     color: #000;
 }
 
+
+.welcome {
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.welcome__logo {
+    margin-bottom: 20px;
+}
+
+
+
+
+.welcome__container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    animation     : bounce 1s 2s cubic-bezier(.96,.01,.98,.41)
+}
+.welcome__link {
+    display        : block;
+    padding        : 13px 30px;
+    border         : solid 1px #1c5bc3;
+    border-radius  : 4px;
+    color          : #1c5bc3;
+    text-transform : uppercase;
+    text-decoration: none;
+    font-size      : 12px;
+    font-weight    : 600;
+    letter-spacing : 2px;
+   
+}
+
+.welcome__container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    animation     : bounce 1s 2s cubic-bezier(.96,.01,.98,.41)
+}
+
+.welcome__link:after {
+    content            : '';
+    display            : inline-block;
+    background-position: center;
+    width              : 17px;
+    height             : 18px;
+    margin-left        : 10px;
+    
+   
+}
+
+.welcome__link-arrow::after {
+    background: url(img/main_icon_wel.png)  no-repeat;
+   
+}
+@keyframes bounce {
+    0%, 40%, 80% {
+        transform: translateY(0);
+    }
+
+    0% {
+      
+        transform: translateY(0);
+        
+    }
+    20% {
+        transform: translateY(-30px);
+        opacity  : 1;
+    }
+    
+
+    60% {
+        transform: translateY(-15px);
+        
+    }
+}
