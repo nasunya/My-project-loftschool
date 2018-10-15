@@ -125,11 +125,25 @@ li {
     font-size  : 14px;
     font-weight: 550;
 }
-
+.trangle {
+    border             : 10px solid transparent;
+    width              : 0px;
+    height             : 0px;
+    border-bottom-color: #1c5bc4;
+    display            : inline-block;
+    text-align         : right;
+    border-bottom-width: 10px;
+    border-top-width   : 0px;
+    border-left-width  : 10px;
+    border-right-width : 10px;
+    
+   }
 .dropdowm {
     position: relative;
 }
-
+.dropdown__list {
+    text-align: left;
+}
 .dropdowm:hover .dropdown__menu{
    left   : 0;
    opacity: 1;
@@ -142,11 +156,11 @@ li {
     width      : 170px;
     height     : 50px;
     top        : 100%;
-    margin-top : 19px;
-    opacity    : 0;
-    transition : opacity .4s;
-    left       : -9999px;
-    font-size  : 14px;
+    mar
+    opacity   : 0;
+    transition: opacity .4s;
+    left      : -9999px;
+    font-size : 14px;
    
 }
 
@@ -212,7 +226,16 @@ li {
 .nav__link:hover {
     color: #000;
 }
+.nav__link-main:hover {
+   background-image: url(img/main_icon111.png)
+} 
 
+.nav__link-people:hover {
+    background-image: url(img/team_icon_black.png)
+ } 
+ .nav__link-rv:hover {
+    background-image: url(img/отзывыff.png)
+ } 
 .nav__list {
     list-style-type: none;
     text-transform : uppercase;
@@ -247,24 +270,43 @@ li {
     letter-spacing : 2px;
     text-decoration: none;
 }
+.nav__link-people {
+    background-image : url(img/экипаж.png);
+    background-repeat: no-repeat;
+}
 
+
+.nav__link-active {
+    color            : #000;                       /* Цвет активной ссылки */
+    background-image : url(img/main_icon111.png);
+    background-repeat: no-repeat;
+} 
 .nav__link-main {
     background-image : url(img/main_icon__arrroe.png);
     background-repeat: no-repeat;
 
 }
-
 .nav__link-rv {
     background-image : url(img/отзывы.png);
     background-repeat: no-repeat;
 
 }
-
-.nav__link-people {
-    background-image : url(img/экипаж.png);
+.nav__link-rv-active {
+    color            : #000;                   /* Цвет активной ссылки */
+    background-image : url(img/отзывыff.png);
     background-repeat: no-repeat;
+} 
 
-}
+.nav__link-people-active {
+    color            : #000;                          /* Цвет активной ссылки */
+    background-image : url(img/team_icon_black.png);
+    background-repeat: no-repeat;
+} 
+
+
+
+
+
 
 .nav__link:before {
     content            : "";
@@ -355,9 +397,9 @@ li {
 
 
 .title__rates {
-    font-size     : 18px;
-    margin-top    : 1px;
-    margin-bottom : 15px;
+    font-size : 18px;
+    margin-top: 1px;
+   
     text-transform: uppercase;
 }
 
@@ -368,9 +410,9 @@ li {
 
 }
 
+
 .rates__desc {
-    box-sizing: border-box;
-    flex-basis: 30%;
+ 
 
 }
 
@@ -386,7 +428,7 @@ li {
 
 .rates_text {
     text-align    : center;
-    font-size     : 18px;
+    font-size     : 16px;
     padding-bottom: 10px;
     line-height   : 1.7;
 
@@ -439,9 +481,9 @@ li {
 .rates__list {
     text-align     : left;
     list-style-type: disc;
-    padding-left   : 60px;
-    line-height    : 30px;
-    margin-bottom  : 26px;
+  
+    line-height  : 30px;
+    margin-bottom: 26px;
 }
 
 .tariffs-item__price-dollar {
@@ -463,10 +505,6 @@ li {
     letter-spacing: 2px;
 }
 
-.rates__text {
-    line-height  : 30px;
-    margin-bottom: 5px;
-}
 
 .rates__icons {
     display      : block;
@@ -1013,8 +1051,7 @@ textarea {
 }
 
 
-element.style {
-}
+
 .send-button_bg:hover {
     background-color: #fff;
 }
@@ -1053,21 +1090,17 @@ button {
     width      : 17px;
     height     : 18px;
     margin-left: 10px;
-   
+    background : url(img/main_icon__arrroe.png) no-repeat;
 }
+
 
 .send-button_arrow:after {
-    background: url(img/main_icon__arrroe.png) no-repeat;
+    background: url(img/main_icon__arrroe__white.png) no-repeat;
 }
 
 
-.send-button_bg:hover {
-    background-color: #fff;
-}
 
-.send-button:hover {
-    color: #1c5bc4;
-}
+
 
 .button {
     outline   : none;
@@ -1281,9 +1314,6 @@ background: url(img/mail1.png) center center no-repeat;
     background: #4b73b5;
 }
 
-.nav__link-active:active {
-    color: #000;
-}
 
 
 .welcome {
