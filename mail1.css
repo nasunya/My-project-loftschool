@@ -119,18 +119,6 @@ li {
 
 }
 
-.trangle {
-    border             : 10px solid transparent;
-    width              : 0px;
-    height             : 0px;
-    border-bottom-color: #1c5bc4;
-    display            : inline-block;
-    text-align         : right;
-    border-bottom-width: 10px;
-    border-top-width   : 0px;
-    border-left-width  : 10px;
-    border-right-width : 10px;
-}
   
 .header__shedule {
     color      : rgba(255, 255, 255, 0.7);
@@ -142,7 +130,9 @@ li {
 }
 .dropdown__list {
     text-align: left;
+    padding   : 15px 15px 15px 30px;
 }
+
 .dropdowm:hover .dropdown__menu{
    left   : 0;
    opacity: 1;
@@ -150,16 +140,18 @@ li {
 
 .dropdown__menu {
  
-    font-family: 'Roboto', sans-serif;
-    position   : absolute;
-    background : #fff;
-    width      : 170px;
-    height     : 50px;
-    top        : 100%;
-    opacity    : 0;
-    transition : opacity .4s;
-    left       : -9999px;
-    font-size  : 14px;
+    font-family : 'Roboto', sans-serif;
+    position    : absolute;
+    background  : #fff;
+    width       : 170px;
+    height      : 50px;
+    top         : 100%;
+    opacity     : 0;
+    transition  : opacity .4s;
+    left        : -9999px;
+    font-size   : 14px;
+    margin-top  : 10px;
+    padding-left: 10px;
    
 }
 
@@ -206,6 +198,19 @@ li {
 }
 
 
+.dropdown__menu:before {
+    content      : "";
+    position     : absolute;
+    display      : block;
+    height       : 10px;
+    left         : 0;
+    right        : 0px;
+    top          : -29px;
+    border       : 10px solid transparent;
+    border-bottom: 10px solid white;
+    width        : 0;
+    
+    }
 
 
 .main {
@@ -826,10 +831,14 @@ width: 100%;
 
 .booking {
     
-    background   : url(img/Rectangle-1.png) no-repeat;
-    display      : flex;
-    margin-bottom: 30px;
-    align-items  : center;
+background: url(img/Rectangle-1.png) no-repeat;
+
+display        : block;
+margin-bottom  : 30px;
+align-items    : center;
+background-size: cover;
+width          : 100%;
+    
 }
 
 .booking__info {
@@ -1442,4 +1451,3 @@ background: url(img/mail1.png) center center no-repeat;
     background : url(img/main_icon_wel.png) no-repeat;
     margin-top : 3px;
 }
-
