@@ -119,12 +119,6 @@ li {
 
 }
 
-
-.header__shedule {
-    color      : rgba(255, 255, 255, 0.7);
-    font-size  : 14px;
-    font-weight: 550;
-}
 .trangle {
     border             : 10px solid transparent;
     width              : 0px;
@@ -136,8 +130,13 @@ li {
     border-top-width   : 0px;
     border-left-width  : 10px;
     border-right-width : 10px;
-    
-   }
+}
+  
+.header__shedule {
+    color      : rgba(255, 255, 255, 0.7);
+    font-size  : 14px;
+    font-weight: 550;
+}
 .dropdowm {
     position: relative;
 }
@@ -150,17 +149,17 @@ li {
 }
 
 .dropdown__menu {
+ 
     font-family: 'Roboto', sans-serif;
     position   : absolute;
     background : #fff;
     width      : 170px;
     height     : 50px;
     top        : 100%;
-    mar
-    opacity   : 0;
-    transition: opacity .4s;
-    left      : -9999px;
-    font-size : 14px;
+    opacity    : 0;
+    transition : opacity .4s;
+    left       : -9999px;
+    font-size  : 14px;
    
 }
 
@@ -181,9 +180,8 @@ li {
     border-right : 10px solid rgba(113, 101, 58, 0);
     border-bottom: 10px solid #fff;
     right        : 0px;
-    top          : -10px;
+    
 }
-
 
 .dropdown__menu:before {
     content : "";
@@ -413,7 +411,7 @@ li {
 
 .rates__desc {
  
-
+width: 100%;
 }
 
 .rates__name {
@@ -427,13 +425,14 @@ li {
 
 
 .rates_text {
-    text-align    : center;
+    text-align    : left;
     font-size     : 16px;
     padding-bottom: 10px;
     line-height   : 1.7;
 
 
 }
+
 
 .rates__desc__background {
     width        : 70px;
@@ -826,20 +825,21 @@ li {
 }
 
 .booking {
-    background: url(img/pattern.png) no-repeat;
-   
-    display: flex;
     
-    align-items: center;
+    background   : url(img/Rectangle-1.png) no-repeat;
+    display      : flex;
+    margin-bottom: 30px;
+    align-items  : center;
 }
 
 .booking__info {
     
-    margin     : 51px 0;
-    color      : #fff;
-    font-size  : 18px;
-    font-weight: 300;
-    line-height: 1.667;
+   padding    : 15px;
+   color      : #fff;
+   font-size  : 18px;
+   font-weight: 300;
+   line-height: 1.667;
+   text-align : center;
 }
 
 .booking__application {
@@ -1218,8 +1218,9 @@ button {
   
 }
 .social__footer {
-    display       : flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
 }
 .site {
     font-size  : 15px;
@@ -1233,21 +1234,10 @@ width  : 20px;
 height : 20px;
 
 }
-.vertical__booking {
+.vertical{
     display       : flex;
     flex-direction: column;
     margin-top    : 40px;
-}
-.vertical__rates {
-    display       : flex;
-    flex-direction: column;
-    margin-top    : 40px;
-}
-.vertical__addit {
-    display       : flex;
-    flex-direction: column;
-    margin-top    : 50px;
-   
 }
 
 .logo__footer {
@@ -1394,3 +1384,62 @@ background: url(img/mail1.png) center center no-repeat;
         
     }
 }
+
+
+
+.welcome {
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.welcome__logo {
+    margin-bottom: 20px;
+}
+
+
+
+
+.welcome__container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    animation     : bounce 1s 2s cubic-bezier(.96,.01,.98,.41)
+}
+.welcome__link {
+    display        : flex;
+    align-items    : center;
+    padding        : 13px 30px;
+    border         : solid 1px #1c5bc3;
+    border-radius  : 4px;
+    color          : #1c5bc3;
+    text-transform : uppercase;
+    text-decoration: none;
+    font-size      : 12px;
+    font-weight    : 600;
+    letter-spacing : 2px;
+   
+}
+
+.welcome__container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    animation     : bounce 1s 2s cubic-bezier(.96,.01,.98,.41)
+}
+
+  
+
+.welcome__link:after, .welcome__link:hover:after {
+    content    : '';
+    display    : flex;
+    align-items: center;
+    width      : 18px;
+    height     : 18px;
+    margin-left: 10px;
+    background : url(img/main_icon_wel.png) no-repeat;
+    margin-top : 3px;
+}
+
