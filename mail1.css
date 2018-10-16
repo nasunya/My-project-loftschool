@@ -127,6 +127,7 @@ li {
 }
 .dropdowm {
     position: relative;
+    display : inline-block;
 }
 .dropdown__list {
     text-align: left;
@@ -140,18 +141,18 @@ li {
 
 .dropdown__menu {
  
-    font-family : 'Roboto', sans-serif;
-    position    : absolute;
-    background  : #fff;
-    width       : 170px;
-    height      : 50px;
-    top         : 100%;
-    opacity     : 0;
-    transition  : opacity .4s;
-    left        : -9999px;
-    font-size   : 14px;
-    margin-top  : 10px;
-    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    position   : absolute;
+    background : #fff;
+    width      : 160px;
+    height     : 50px;
+    top        : 100%;
+    opacity    : 0;
+    transition : opacity .4s;
+    left       : -9999px;
+    font-size  : 14px;
+    margin-top : 10px;
+   
    
 }
 
@@ -175,16 +176,7 @@ li {
     
 }
 
-.dropdown__menu:before {
-    content : "";
-    display : block;
-    height  : 30px;
-    left    : 0;
-    right   : 0;
-    top     : -29px;
-    position: absolute;
-    
-}
+
  
 .dropdown__day {
     color      : #4b73b5;
@@ -196,7 +188,16 @@ li {
     margin-top: 10px;
    
 }
-
+.dropdown__menu:before {
+    content : "";
+    display : block;
+    height  : 30px;
+    left    : 0;
+    right   : 0;
+    top     : -29px;
+    position: absolute;
+    
+}
 
 .dropdown__menu:before {
     content      : "";
@@ -324,7 +325,7 @@ li {
 .nav__item {
     position     : relative;
     margin-bottom: 20px;
-    padding-right: 90px;
+    padding-right: 88px;
 }
 
 .nav__link {
@@ -400,10 +401,10 @@ li {
 
 
 .title__rates {
-    font-size : 18px;
-    margin-top: 1px;
-   
+    font-size     : 18px;
+    margin-top    : 1px;
     text-transform: uppercase;
+    text-align    : center;
 }
 
 .rates__descrip-coll {
@@ -416,7 +417,7 @@ li {
 
 .rates__desc {
  
-width: 100%;
+width: 270px;
 }
 
 .rates__name {
@@ -430,11 +431,11 @@ width: 100%;
 
 
 .rates_text {
-    text-align    : left;
+    
     font-size     : 16px;
     padding-bottom: 10px;
     line-height   : 1.7;
-
+    padding-left  : 50px;
 
 }
 
@@ -476,7 +477,7 @@ width: 100%;
 }
 
 .rates {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .rates__list-item {
  
@@ -485,9 +486,9 @@ width: 100%;
 .rates__list {
     text-align     : left;
     list-style-type: disc;
-  
-    line-height  : 30px;
-    margin-bottom: 26px;
+    padding-left   : 65px;
+    line-height    : 30px;
+    margin-bottom  : 26px;
 }
 
 .tariffs-item__price-dollar {
@@ -714,7 +715,7 @@ width: 100%;
  }
 .addit__name {
     padding-bottom: 50px;
-    font-size     : 14px;
+   
     text-transform: uppercase;
     
 }
@@ -738,7 +739,7 @@ width: 100%;
 
 
 .addit__title {
-    font-size  : 18px;
+    font-size  : 20px;
     color      : #000;
     font-weight: bold;
     text-align : center;
@@ -837,7 +838,7 @@ display        : block;
 margin-bottom  : 30px;
 align-items    : center;
 background-size: cover;
-width          : 100%;
+width          : 270px;
     
 }
 
@@ -1230,6 +1231,8 @@ button {
     display        : flex;
     flex-direction : column;
     justify-content: center;
+    width          : 270px;
+    text-align     : center;
 }
 .site {
     font-size  : 15px;
@@ -1247,6 +1250,7 @@ height : 20px;
     display       : flex;
     flex-direction: column;
     margin-top    : 40px;
+    width         : 270px;
 }
 
 .logo__footer {
