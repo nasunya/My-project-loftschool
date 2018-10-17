@@ -250,9 +250,9 @@ opacity: 1;
 
 
 .nav__list__item {
-    display: flex;
-    
-    flex-direction: row;
+    display        : flex;
+    justify-content: center;
+    flex-direction : row;
 
 }
 
@@ -404,10 +404,11 @@ opacity: 1;
 
 
 .title__rates {
-    font-size     : 18px;
-    margin-top    : 1px;
-    text-transform: uppercase;
-    text-align    : center;
+    display        : flex;
+    justify-content: center;
+    font-size      : 18px;
+    margin-top     : 1px;
+    text-transform : uppercase;
 }
 
 .rates__descrip-coll {
@@ -1230,7 +1231,7 @@ button {
     margin: 0;
   
 }
-.social__footer {
+.social {
     display        : flex;
     flex-direction : column;
     justify-content: center;
@@ -1254,6 +1255,7 @@ height : 20px;
     flex-direction: column;
     margin-top    : 40px;
     width         : 270px;
+    align-items   : center;
 }
 
 .logo__footer {
@@ -1314,7 +1316,7 @@ background: url(img/mail1.png) center center no-repeat;
 }
 .new__list {
     letter-spacing: 7px;
-   
+    
 } 
 .footer {
     background: #4b73b5;
