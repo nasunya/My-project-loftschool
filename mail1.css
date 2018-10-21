@@ -82,8 +82,10 @@ li {
     background-color: #4b73b5;
     padding         : 18px 0;
     display         : flex;
-
+    margin-bottom   : 30px;
 }
+
+
 .header__col {
    flex: 1;
     
@@ -283,7 +285,7 @@ opacity: 1;
 }
 
 
-.nav__link-active {
+.nav__link__active {
     color            : #000;                       /* Цвет активной ссылки */
     background-image : url(img/main_icon111.png);
     background-repeat: no-repeat;
@@ -298,13 +300,13 @@ opacity: 1;
     background-repeat: no-repeat;
 
 }
-.nav__link-rv-active {
+.nav__link-rv__active {
     color            : #000;                   /* Цвет активной ссылки */
     background-image : url(img/отзывыff.png);
     background-repeat: no-repeat;
 } 
 
-.nav__link-people-active {
+.nav__link-people__active {
     color            : #000;                          /* Цвет активной ссылки */
     background-image : url(img/team_icon_black.png);
     background-repeat: no-repeat;
@@ -327,7 +329,6 @@ opacity: 1;
 }
 .nav__item {
     position     : relative;
-    margin-bottom: 20px;
     padding-right: 88px;
 }
 
@@ -354,7 +355,7 @@ opacity: 1;
     display       : flex;
     flex-direction: row;
     font-size     : 14px;
-    margin-top    : 30px;
+   
 }
 
 
@@ -466,7 +467,8 @@ width: 270px;
 
 
 .news-last {
-    margin: 0 auto;
+    margin       : 0 auto;
+    margin-bottom: 63px;
 }
 
 .desc {
@@ -482,6 +484,8 @@ width: 270px;
 
 .rates {
     margin-bottom: 30px;
+    border       : 1px solid #e8e9ed;
+    padding-top  : 30px;
 }
 .rates__list-item {
  
@@ -558,25 +562,18 @@ width: 270px;
 .news__block {
     display       : flex;
     flex-direction: column;
-    padding-bottom: 30px;
-    margin-bottom : 30px;
 }
 
 .news__block:last-child {
     border: none;
 }
 
-.news__image {
-   
-}
 
 .news__desc {
     display       : flex;
     flex-direction: column;
-    
-    overflow    : hidden;
-    padding-left: 19px;
-    padding-top : 40px;
+    overflow      : hidden;
+    padding-left  : 19px;
 }
 
 .news__date {
@@ -607,6 +604,8 @@ width: 270px;
     height       : 163px;
     width        : 163px;
     overflow     : hidden;
+    margin       : 0 auto;
+    margin-bottom: 30px;
    
 }
 
@@ -748,8 +747,9 @@ width: 270px;
     color      : #000;
     font-weight: bold;
     text-align : center;
-    
+    padding-top: 32px;
 }
+    
 
   /*Третья страница Отзывы*/
 
@@ -782,12 +782,16 @@ width: 270px;
     filter: grayscale(0);
     
 }
-
+.reviews__list {
+    margin-bottom: 30px;
+}
 .list-view {
     display       : flex;
     border-bottom : 2px #f5f5f5 solid;
-    padding-bottom: 21px;
     margin-bottom : 30px;
+    padding-bottom: 30px;
+    
+  
 }
 
 .list-view__picture {
@@ -795,6 +799,7 @@ width: 270px;
     height       : 160px;
     border-radius: 50%;
     overflow     : hidden;
+    margin-right : 20px;
 }
 
 
@@ -805,8 +810,7 @@ width: 270px;
 }
 
 .list-view__desc {
-    width      : 75%;
-    margin-left: 22px;
+    width: 75%;
 }
 
 .list-view__date {
@@ -831,8 +835,8 @@ width: 270px;
 }
 
 .list-view__desc {
-    width      : 75%;
-    margin-left: 22px;
+    width: 75%;
+   
 }
 
 .booking {
@@ -877,12 +881,12 @@ width          : 270px;
     display        : flex;
     justify-content: center;
     align-items    : center;
-    padding        : 54px 0;
+  
 }
 
 .form {
-    display   : block;
-    margin-top: 0;
+    display      : block;
+    margin-bottom: 50px;
 }
 
 .form__wrap {
@@ -1009,7 +1013,7 @@ textarea {
     border: 1px solid #4b73b5;
 }
 
-.radio-button__radio: checked+.radio-button__radio-fake+.radio-button__label-text {
+.radio-button__radio: checked +.radio-button__radio-fake+.radio-button__label-text {
     color: #4b73b5;
 }
 
@@ -1254,9 +1258,16 @@ height : 20px;
 .vertical{
     display       : flex;
     flex-direction: column;
-    margin-top    : 40px;
     width         : 270px;
     align-items   : center;
+
+}
+
+.addit {
+    display       : flex;
+    border        : 1px solid #e8e9ed;
+    flex-direction: column;
+    width         : 270px;
 }
 
 .logo__footer {
