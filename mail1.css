@@ -58,9 +58,6 @@ li {
     flex          : 1;
 }
 
-.wrapper__content {
-    flex: 1;
-}
 
 .wrapper__auth {
  position  : fixed;
@@ -251,10 +248,9 @@ opacity: 1;
 
 .nav__list-item {
     display        : flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     list-style     : none;
-    width          : 83%;
-    margin         : 0;
+ 
 }
 
 .nav {
@@ -337,7 +333,7 @@ opacity: 1;
 .nav__item {
     display       : flex;
     flex-direction: row;
-    
+    margin-right  : 93px;
  
 }
 
