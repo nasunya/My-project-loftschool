@@ -220,18 +220,16 @@ opacity: 1;
 
 
 .main {
-    display: flex;
-    flex   : 1;
+    display      : flex;
+    flex         : 1;
+    margin-bottom: 50px;
 }
 
 
 
 
 
-.nav {
-    order        : -1;
-    margin-bottom: 18px;
-}
+
 .nav__link:hover {
     color: #000;
 }
@@ -253,11 +251,20 @@ opacity: 1;
 
 .nav__list__item {
     display        : flex;
-    justify-content: center;
-    flex-direction : row;
-
+    justify-content: space-between;
+    list-style     : none;
+    width          : 83%;
+    margin         : 0;
 }
 
+.nav {
+    text-transform: uppercase;
+    font-weight   : bold;
+    font-size     : 12px;
+    letter-spacing: 1px;
+    width         : 83%;
+    
+}
 .nav__text {
     max-width     : 100%;
     display       : inline-block;
@@ -328,8 +335,10 @@ opacity: 1;
     
 }
 .nav__item {
-    position     : relative;
-    padding-right: 88px;
+    display       : flex;
+    flex-direction: row;
+    
+ 
 }
 
 .nav__link {
@@ -339,9 +348,9 @@ opacity: 1;
 }
 
 .maincontent {
-    display    : inline-block;
-    width      : 83%;
-    margin-left: 30px;
+    display: inline-block;
+    width  : 83%;
+    
 }
 
 .maincontent__main {
@@ -908,9 +917,10 @@ width          : 270px;
 }
 
 .form__label {
-    flex       : 1;
-    margin-left: 20px;
+    flex        : 1;
+    margin-right: 20px;
 }
+
 
 .form__label-text {
     font-size    : 14px;
@@ -1134,7 +1144,7 @@ button {
     display        : flex;
     justify-content: center;
     align-items    : center;
-    margin-bottom  : 60px;
+   
 }
 
 .pagination__info {
@@ -1262,7 +1272,7 @@ height : 20px;
     flex-direction: column;
     width         : 270px;
     align-items   : center;
-
+    margin-right  : 30px;
 }
 
 .addit {
@@ -1473,4 +1483,8 @@ background: url(img/mail1.png) center center no-repeat;
     margin-left: 10px;
     background : url(img/main_icon_wel.png) no-repeat;
     margin-top : 3px;
+}
+
+.pagination__marg {
+    margin-bottom: 50px;
 }
