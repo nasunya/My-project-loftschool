@@ -769,7 +769,9 @@ width: 270px;
 }
 
 .list-view_last:last-child {
-    border: none;
+    border        : none;
+    margin-bottom : 0;
+    padding-bottom: 0;
 }
 .title_reviews {
     font-size    : 49px;
@@ -783,7 +785,7 @@ width: 270px;
     
 }
 .reviews__list {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .list-view {
     display       : flex;
